@@ -14,7 +14,7 @@ print(Object2)
 #Replacing missing value
 y<-ifelse(is.na(y), 2.5, y)
 #Load dataset
-library(readr)prb<-read_csv(file = "https://raw.githubusercontent.com/mattdemography/EDU_7043/master/Data/Assignment_1.csv" )
+#File import dataset-from text (readr) copy and paste link, click update, then import 
 #Print state abbreviations
 head (state.abb,n=10)
 #Mean of murder
@@ -26,6 +26,4 @@ NewEngland<-subset(Assignment_1, State== "CT"|State== "NH"|State== "ME"|State=="
 mean(NewEngland$Murder)
 #Bonus
 mean(Assignment_1$Vcrime, na.rm= TRUE)
-write.csv(Novoa_Sydney_Assignment_#1.docx, Novoa_Sydney_Assignment_#1.csv")
-write.csv(NewEngland,"~/Destop/NewEngland.csv")
-          
+
